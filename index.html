@@ -26,12 +26,18 @@
         function MediaPlayer(config) {
             this.media = config.el;
         };
-
-        function MediaPlayer() {};
         MediaPlayer.prototype.play = function() {
-            video.play()
-        }
-        const player = new MediaPlayer();
+            if (this.media.paused) {
+                this.media.play();
+            } else {
+                this.media.pause();
+            }
+        };
+
+        const player = new MediaPlayer({
+            el: video
+        });
+
         button.onclick = () => player.play();
     </script>
 </body>
