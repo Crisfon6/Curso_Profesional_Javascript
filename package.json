@@ -1,0 +1,18 @@
+{
+    "name": "profesional-javascript",
+    "version": "1.0.0",
+    "description": "Super proyecto del curso profesional de Javascript",
+    "main": "index.js",
+    "scripts": {
+        "start": "live-server"
+    },
+    "keywords": [
+        "javascript",
+        "curso"
+    ],
+    "author": "crisfon6 <disruptivecrisfon6@gmail.com",
+    "license": "MIT",
+    "devDependencies": {
+        "live-server": "^1.2.2"
+    }
+}
